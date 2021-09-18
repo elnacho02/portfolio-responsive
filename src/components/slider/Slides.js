@@ -22,7 +22,7 @@ const slidesInfo = [
 
 const slides = slidesInfo.map(slide=>(
     <div className="slide-container">
-        <a href="slide.href">
+        <a href={slide.href}>
             <img src={slide.src} alt={slide.alt}/>
         </a>
         <div className="slide-desc">
