@@ -3,9 +3,10 @@ import "./Slider.css";
 
 const slidesInfo = [
     {
-        src:"https://cdn.pixabay.com/photo/2016/12/19/08/39/mobile-phone-1917737_960_720.jpg",
-        alt:"Project 1",
-        desc: "Project 1"
+        src:"../../../img/blockbusted.png",
+        alt:"Movies App",
+        desc: "Movies App",
+        href:"https://elnacho02.github.io/movies-app/"
     },
     {
         src:"https://cdn.pixabay.com/photo/2017/10/31/19/05/web-design-2906159_960_720.jpg",
@@ -21,7 +22,9 @@ const slidesInfo = [
 
 const slides = slidesInfo.map(slide=>(
     <div className="slide-container">
-        <img src={slide.src} alt={slide.alt}/>
+        <a href="slide.href">
+            <img src={slide.src} alt={slide.alt}/>
+        </a>
         <div className="slide-desc">
             <span>{slide.desc}</span>
         </div>

@@ -12,14 +12,14 @@ const Slider = () => {
 
             <Carousel 
                 plugins={["arrows","centered"]}
-                slidesPerPage= {2}
+                slidesPerPage= {3}
                 animationSpeed={200}
                 offset={50}
                 itemWidth={350}
                 slides={Slides}
                 breakpoints={{
                     960:{
-                        slidesPerPage:1,
+                        slidesPerPage:2,
                         itemWidth:350,
                     }
                 }}
