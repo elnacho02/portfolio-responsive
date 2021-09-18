@@ -3,7 +3,7 @@ import "./Slider.css";
 
 const slidesInfo = [
     {
-        src:"../../../img/blockbusted.png",
+        src:"../../media/Screenshot_1.jpg",
         alt:"Movies App",
         desc: "Movies App",
         href:"https://elnacho02.github.io/movies-app/"
