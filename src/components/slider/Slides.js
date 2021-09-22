@@ -9,8 +9,8 @@ const slidesInfo = [
     },
     {
         src:"https://i.ibb.co/VYvC7k6/Screenshot-12.jpg",
-        alt:"Project 2",
-        desc: "Project 2",
+        alt:"Weather App",
+        desc: "Weather App",
         href: "https://elnacho02.github.io/weather-app/"
     },
     {
