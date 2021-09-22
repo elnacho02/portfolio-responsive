@@ -12,7 +12,7 @@ const Slider = () => {
 
              <Carousel 
                 plugins={["arrows","centered"]}
-                slidesPerPage= {3}
+                slidesPerPage= {2}
                 animationSpeed={200}
                 offset={50}
                 itemWidth={350}
