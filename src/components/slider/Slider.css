@@ -23,6 +23,7 @@
 
 .slide-container > img{
     object-fit: contain;
+    
     transition: all 0.2s ease;
 }
 
