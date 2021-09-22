@@ -8,7 +8,7 @@ const slidesInfo = [
         href:"https://elnacho02.github.io/movies-app/"
     },
     {
-        src:"https://i.ibb.co/VYvC7k6/Screenshot-12.jpg",
+        src:"https://i.ibb.co/kc35h5B/Screenshot-1.jpg",
         alt:"Weather App",
         desc: "Weather App",
         href: "https://elnacho02.github.io/weather-app/"
