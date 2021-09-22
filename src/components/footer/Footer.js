@@ -19,7 +19,7 @@ const Footer = () => {
             </div>
             <div className="footer-sns">
                 <div className="design-by">
-                    Designed by Myself    
+                    Created with ReactJs   
                 </div>
                 <div className="sns-links">
                     <a href="https://linkedin.com" target="_blank" rel="noreferrer">
