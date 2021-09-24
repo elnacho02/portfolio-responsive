@@ -11,7 +11,7 @@ const slidesInfo = [
         src:"https://i.ibb.co/Wp65SvV/Screenshot-1.jpg",
         alt:"Weather App",
         desc: "Weather App",
-        href: "https://modest-hodgkin-695052.netlify.app/"
+        href: "https://modest-thompson-d7ba63.netlify.app/#/"
     },
     {
         src:"https://cdn.pixabay.com/photo/2015/02/05/08/06/macbook-624707_960_720.jpg",
