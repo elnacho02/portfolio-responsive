@@ -20,7 +20,7 @@
     color: white;
     cursor: pointer;
 }
-.navbar>div{
+.navbar>.navbar-logo{
     margin-right: 20px;
 }
 

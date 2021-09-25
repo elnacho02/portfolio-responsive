@@ -1,42 +1,51 @@
 import React from 'react';
 import "./Navbar.css";
-import { useState } from 'react';
+import { Link } from 'react-scroll';
 
-const Navbar = ({ isScrolling }) => {
-    const toTheTop = ()=>{
-        window.scrollTo({top: 0, left:0, behavior:'smooth'});
-    }
-    const toAbout = ()=>{
-        window.scrollTo({top: 500, left:0, behavior:'smooth'});
-    }
-    const toContact= ()=>{
-        window.scrollTo({top: 2500, left:0, behavior:'smooth'});
-    }
-    var [lang,setLang] = useState("en");
-    
-    const changeLang = ()=>{
-        if(lang==="es") setLang("en");
-        else setLang("es");
+const Navbar = (props) => {
+    const toBot = ()=>{
+        window.scrollTo({top: 3000, left:0, behavior:'smooth'});
     }
     
-    return (
-        <nav className={`navbar ${isScrolling > 20 ? "scrolling" : null}`}>
-            <div className="navbar-logo" onClick={toTheTop}>My Projects</div>
-            <div className="navbar-logo" onClick={toAbout}>About Me</div>
-            <div className="navbar-logo" onClick={toContact}>Contact</div>
-            <div className="lang-container">
-            
-                <button onClick={changeLang} className={lang === "en" ? "en-clicked" : "en"}>
-                    <span className="flag-icon flag-icon-us"></span>
-                </button>
-                <button onClick={changeLang}  className={lang === "es" ? "es-clicked" : "esp"}>
-                    <span className="flag-icon flag-icon-es"></span>
-                </button>
+    if(props.lang === "en"){
+        return (
+            <nav className={`navbar ${props.isScrolling > 20 ? "scrolling" : null}`}>
+                <Link className="navbar-logo" to="projects" smooth={true} duration={1000}>My Projects</Link>
+                <Link className="navbar-logo" to="about" smooth={true} duration={1000}>About Me</Link>
+                <Link className="navbar-logo" onClick={toBot}>Contact</Link>
+                <div className="lang-container">
                 
+                    <button onClick={props.changeLang} className={props.lang === "en" ? "en-clicked" : "en"}>
+                        <span className="flag-icon flag-icon-us"></span>
+                    </button>
+                    <button onClick={props.changeLang}  className={props.lang === "es" ? "es-clicked" : "esp"}>
+                        <span className="flag-icon flag-icon-es"></span>
+                    </button>
                     
-            </div>
-        </nav>
-    )
+                        
+                </div>
+            </nav>
+        )}
+        else{
+            return (
+                <nav className={`navbar ${props.isScrolling > 20 ? "scrolling" : null}`}>
+                    <Link className="navbar-logo" to="projects" smooth={true} duration={1000}>Mis Proyectos</Link>
+                    <Link className="navbar-logo" to="about" smooth={true} duration={1000}>Sobre Mí</Link>
+                    <Link className="navbar-logo" onClick={toBot}>Contacto</Link>
+                    <div className="lang-container">
+                    
+                        <button onClick={props.changeLang} className={props.lang === "en" ? "en-clicked" : "en"}>
+                            <span className="flag-icon flag-icon-us"></span>
+                        </button>
+                        <button onClick={props.changeLang}  className={props.lang === "es" ? "es-clicked" : "esp"}>
+                            <span className="flag-icon flag-icon-es"></span>
+                        </button>
+                        
+                            
+                    </div>
+                </nav>
+            )
+        }
 }
 
 export default Navbar
