@@ -1,17 +1,17 @@
 import React from "react";
 import "./Slider.css";
 const slidesInfo = [
-    {
-        src:"https://i.ibb.co/zZxDjwR/Screenshot-1.jpg",
-        alt:"Movies App",
-        desc: "Movies App",
-        href:"https://elnacho02.github.io/movies-app/"
-    },
-    {
+   {
         src:"https://i.ibb.co/Wp65SvV/Screenshot-1.jpg",
         alt:"Weather App",
         desc: "Weather App",
         href: "https://modest-thompson-d7ba63.netlify.app/#/"
+    },
+    {
+        src:"https://i.ibb.co/3TSn6TV/Screenshot-1.jpg",
+        alt:"Movies App",
+        desc: "Movies App",
+        href:"https://sleepy-poitras-8a039c.netlify.app/"
     },
     {
         src:"https://cdn.pixabay.com/photo/2015/02/05/08/06/macbook-624707_960_720.jpg",
