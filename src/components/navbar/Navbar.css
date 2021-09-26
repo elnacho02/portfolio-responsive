@@ -3,12 +3,19 @@
     flex-direction: row;
     position: fixed;
     top: 0;
+    justify-content: flex-start;
+    align-items: center;
     background-color: transparent;
     width: 100%;
     height: 80px;
-    padding-left: 50px;
     font-size: 20px;
     z-index: 1;
+    gap: 20px;
+}
+.linksNavbar{
+    display: flex;
+    gap: 20px;
+    margin-left: 20px;
 }
 .scrolling {
     background-color: black;
@@ -20,17 +27,10 @@
     color: white;
     cursor: pointer;
 }
-.navbar>.navbar-logo{
-    margin-right: 20px;
-}
+
 
 .lang-container{
-    display: flex;
-    flex-direction: row;
-    gap: 0px;
-    align-items: center;
     position: absolute;
-    top: 25px;
     right: 10px;
 }
 
@@ -40,6 +40,7 @@
     width: 30px;
     height: 25px;
 }
+
 .es-clicked{
     box-shadow: 0px 0px 18px 1px whitesmoke; 
 }
@@ -48,8 +49,16 @@
     
 }
 @media screen and (max-width: 960px){
+    .lang-container{
+        position: relative;
+        margin-right: -10px;
+    }
     .navbar{
+        font-size: 16px;
+        font-weight: 500;
         justify-content: center;
-        padding-right: 25px;
+    }
+    .linksNavbar{
+        margin-left: 0px;
     }
 }

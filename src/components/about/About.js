@@ -4,7 +4,7 @@ import "./About.css";
 function About(props) {
     if(props.lang === "en"){
         return (
-            <div className="about-container" id="about">
+            <div className="about-container" id="about" >
                 <div className="about-desc" >
                     <h3 >Let me tell you about me</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipis lorem. Lorem ipsum dolor sit amet, consectetur adip lorem. Lorem ipsum dolor sit amet, consectlorem. Lorem ipsum d</p> 

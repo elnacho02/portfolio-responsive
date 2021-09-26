@@ -9,10 +9,13 @@ const Navbar = (props) => {
     
     if(props.lang === "en"){
         return (
+            
             <nav className={`navbar ${props.isScrolling > 20 ? "scrolling" : null}`}>
-                <Link className="navbar-logo" to="projects" smooth={true} duration={1000}>My Projects</Link>
-                <Link className="navbar-logo" to="about" smooth={true} duration={1000}>About Me</Link>
-                <Link className="navbar-logo" onClick={toBot}>Contact</Link>
+                <div className="linksNavbar">
+                    <Link className="navbar-logo" to="projects" smooth={true} duration={1000}>My Projects</Link>
+                    <Link className="navbar-logo" to="about" smooth={true} duration={1000}>About Me</Link>
+                    <Link className="navbar-logo" onClick={toBot}>Contact</Link>
+                </div>
                 <div className="lang-container">
                 
                     <button onClick={props.changeLang} className={props.lang === "en" ? "en-clicked" : "en"}>
@@ -21,17 +24,19 @@ const Navbar = (props) => {
                     <button onClick={props.changeLang}  className={props.lang === "es" ? "es-clicked" : "esp"}>
                         <span className="flag-icon flag-icon-es"></span>
                     </button>
-                    
-                        
                 </div>
             </nav>
         )}
         else{
             return (
                 <nav className={`navbar ${props.isScrolling > 20 ? "scrolling" : null}`}>
-                    <Link className="navbar-logo" to="projects" smooth={true} duration={1000}>Mis Proyectos</Link>
-                    <Link className="navbar-logo" to="about" smooth={true} duration={1000}>Sobre Mí</Link>
-                    <Link className="navbar-logo" onClick={toBot}>Contacto</Link>
+                    
+                    <div className="linksNavbar">
+                        <Link className="navbar-logo" to="projects" smooth={true} duration={1000}>Mis Proyectos</Link>
+                        <Link className="navbar-logo" to="about" smooth={true} duration={1000}>Sobre Mí</Link>
+                        <Link className="navbar-logo" onClick={toBot}>Contacto</Link>
+                    </div>
+                    
                     <div className="lang-container">
                     
                         <button onClick={props.changeLang} className={props.lang === "en" ? "en-clicked" : "en"}>
