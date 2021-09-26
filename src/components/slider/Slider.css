@@ -72,10 +72,11 @@
     .carousel-title{
         width: 100%;
         text-align: center;
-        padding: 50px 0 0 0;
+        padding: 0;
+        margin-bottom: -30px;
+        
     }
-    .slide-container{
-        display: flex;
+    .slide-container{ 
         width: 100%;
         margin-left: 25px;
     }
