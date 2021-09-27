@@ -15,7 +15,7 @@ const Slider = () => {
 
              <Carousel 
                 
-                plugins={["centered","arrows",
+                plugins={["arrows","centered",
                   
                   {
                     resolve: slidesToShowPlugin,
@@ -24,23 +24,20 @@ const Slider = () => {
                     }
                   },
                   
+                  
                 ]}
                 offset={20}
                 breakpoints={{
                   960:{
-                      plugins: ['centered',
+                      plugins: ['centered',"arrows",
                           {
                             resolve: slidesToShowPlugin,
                             options: {
                              numberOfSlides: 1
                             }
                           },
-                          {
-                            resolve: autoplayPlugin,
-                            options: {
-                              interval: 4000,
-                            }
-                          },
+                          
+                          
                         ],
                   }
                   
