@@ -64,7 +64,7 @@ const Footer = (props) => {
                         <a href="https://linkedin.com" target="_blank" rel="noreferrer">
                             <i className="fab fa-linkedin linkedin"></i>
                         </a>
-                        <a href="https://gmail.com" target="_blank" rel="noreferrer">
+                        <a href="mailto:nacho@gmail.com" target="_blank" rel="noreferrer">
                             <i className="far fa-envelope email"></i>
                         </a>
                         <a href="https://instagram.com" target="_blank" rel="noreferrer">

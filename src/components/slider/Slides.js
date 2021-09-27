@@ -17,6 +17,11 @@ const slidesInfo = [
         src:"https://cdn.pixabay.com/photo/2015/02/05/08/06/macbook-624707_960_720.jpg",
         alt:"Project 3",
         desc: "Project 3"
+    },
+    {
+        src:"https://cdn.pixabay.com/photo/2015/02/05/08/06/macbook-624707_960_720.jpg",
+        alt:"Project 4",
+        desc: "Project 4"
     }
 ]
 

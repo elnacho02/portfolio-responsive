@@ -4,7 +4,7 @@ import "@brainhubeu/react-carousel/lib/style.css";
 import Slides from "./Slides";
 import "./Slider.css";
 import { slidesToShowPlugin } from '@brainhubeu/react-carousel';
-import { slidesToScrollPlugin } from '@brainhubeu/react-carousel';
+
 const Slider = () => {
     
     return (
@@ -15,7 +15,7 @@ const Slider = () => {
 
              <Carousel 
                 plugins={[
-                    'arrows',"centered",
+                    'arrows','centered',
                     {
                       resolve: slidesToShowPlugin,
                       options: {
@@ -29,15 +29,15 @@ const Slider = () => {
                 slides={Slides}
                 breakpoints={{
                     960:{
-                        plugins: ["centered",
+                        plugins: ["centered","infinite",
                             {
                               resolve: slidesToShowPlugin,
                               options: {
-                               numberOfSlides: 1
+                               numberOfSlides: 4
                               }
                             },
                           ],
-                        
+                        itemWidth: 250 
                         
                     }
                 }}
