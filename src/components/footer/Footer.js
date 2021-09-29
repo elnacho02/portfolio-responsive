@@ -5,18 +5,25 @@ const Footer = (props) => {
     return (
         <footer className="footer" id="contact">
             <div className="footer-info">
-                <h1>Ignacio Aranda</h1>
-                <div className="country">
-                    <p>Tucumán, Argentina</p>
-                
-                    <i class="fas fa-globe-americas globo"></i>
+                <div>
+                    <h1>Ignacio Aranda</h1>
+                    <div className="country">
+                        <p>Tucumán, Argentina</p>
+                    
+                        <i class="fas fa-globe-americas globo"></i>
+                    </div>
+                </div>
+                 <div className="contactContainer">
+                    <h5>CONTACT</h5>
+                    <form>
+                        <input className="text-input" placeholder=" Name" type="text" id="name" autoComplete="off"/>
+                        <input className="text-input" placeholder=" Email" type="email" id="email" autoComplete="off"/>
+                        <textarea className="inputMess" placeholder=" Message"></textarea>
+                        <input className="inputBot" type="button" name="send" value="SEND"/>
+                    </form>
                 </div>
                 
                 
-            </div>
-            <div className="footer-contact">
-                <h3>Contact me</h3>
-                <p>and let´s get down to work</p>
             </div>
             <div className="footer-sns">
                 <div className="design-by">

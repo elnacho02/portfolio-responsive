@@ -11,11 +11,41 @@
 }
 
 .footer-info{
+    display: flex;
+    flex-direction: row;
     font-size: 35px;
     padding: 30px 0 30px 50px;
     width: 70%;
     margin: 0 auto;
 
+}
+.contactContainer{
+    width: 30%;
+    padding: 30px 0 30px 0;
+    margin-left: 15%;
+}
+.contactContainer>form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+input, textarea{
+    color: white;
+    border-radius: 10px;
+    background-color: black;
+    border: none;
+    border: 1px solid white;
+    height: 30px;
+}
+textarea{border-radius: 0;}
+.contactContainer>form>button{
+    width: 100px;}
+.inputBot{
+    width: 100px;
+}
+.inputMess{
+    height: 70px;
 }
 .country{
     display: flex;
@@ -28,13 +58,6 @@
 
 .footer-info>h1{
     padding-bottom: 15px;
-}
-
-.footer-contact{
-    font-size: 22px;
-    padding: 80px 0 30px 50px;
-    width: 70%;
-    margin: 0 auto;
 }
 
 .footer-sns{

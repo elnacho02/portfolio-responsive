@@ -13,11 +13,10 @@ const Info = () => {
     var [skillSelected, setSkillSelected] = useState("jsStars")
     
     return (
-            <div className="sidebarContainer">
+            <div className="sidebarContainer" >
                 <div className="sideMenuContainer">
                         <span onClick={()=>seleccionar("skills")}  className={selected==="skills"? "skills" : "sectionSpan"}>SKILLS</span>
                         <span onClick={()=>seleccionar("education")} className={selected==="education"? "educacion" : "sectionSpan"}>EDUCATION</span>
-                        <span onClick={()=>seleccionar("jobexp")}  className={selected==="jobexp"? "jobexp" : "sectionSpan"}>JOB EXP</span>
                 </div>
                 <div className="sideInfoContainer">
                         {selected==="education" && 

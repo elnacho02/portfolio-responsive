@@ -56,7 +56,10 @@
 }
 .idiomasLevel{
     margin-top: 2%;
+    display: flex;
+    flex-direction: row;
 }
+
 .span{
     margin-right: 25px;
     font-weight: 400;
@@ -116,6 +119,7 @@
     }
     .sectionSpan{
         text-align: center;
+        align-self: center;
         color: rgb(255, 255, 255);
         padding: 5px;
         background: linear-gradient(rgb(9, 66, 88), rgb(8, 137, 141)) ;
@@ -128,6 +132,7 @@
         background: radial-gradient(rgb(9, 66, 88), rgb(8, 137, 141)) ; ;
         transition: all 0.3s ease-out;
         border-radius: 5px;
+        align-self: center;
         transform: scale(1.05);
         border: 2px solid grey;
         border-top-color: transparent;

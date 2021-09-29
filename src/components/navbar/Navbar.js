@@ -13,7 +13,7 @@ const Navbar = (props) => {
             <nav className={`navbar ${props.isScrolling > 20 ? "scrolling" : null}`}>
                 <div className="linksNavbar">
                     <Link className="navbar-logo" to="projects" smooth={true} duration={1000}>My Projects</Link>
-                    <Link className="navbar-logo" to="about" smooth={true} duration={1000}>About Me</Link>
+                    <Link className="navbar-logo" to="about" smooth={true} duration={1000}>About</Link>
                     <Link className="navbar-logo" onClick={toBot}>Contact</Link>
                 </div>
                 <div className="lang-container">
