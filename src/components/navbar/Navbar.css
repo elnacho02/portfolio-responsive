@@ -31,7 +31,7 @@
 
 .lang-container{
     position: absolute;
-    right: 10px;
+    right: 0px;
 }
 
 .flag-icon{
@@ -40,19 +40,31 @@
     width: 30px;
     height: 25px;
 }
-
+.es, .en{
+    border: none;
+    margin-right: 10px;
+}
 .es-clicked{
-    box-shadow: 0px 0px 18px 1px whitesmoke; 
+    padding-bottom: 5px;
+    background: transparent;
+    border: none;
+    border-bottom: 4px solid white;
+    transition: all 0.3s ease-out;
+    margin-right: 10px;
 }
 .en-clicked{
-     box-shadow: 0px 0px 18px 1px whitesmoke; 
-    
+    padding-bottom: 5px;
+    background: transparent;
+    border: none;
+    border-bottom: 4px solid white;
+    transition: all 0.3s ease-out;
+    margin-right: 10px;
 }
 @media screen and (max-width: 960px){
     .lang-container{
         position: relative;
-        margin-right: -10px;
     }
+    
     .navbar{
         font-size: 16px;
         font-weight: 500;

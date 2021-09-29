@@ -6,6 +6,7 @@ import About from './components/about/About';
 import Slider from './components/slider/Slider';
 import Info from './components/info/Info';
 import Footer from './components/footer/Footer';
+import SideBar from "./components/sidebar/SideBar"
 /* import Slider2 from './components/slider2/Slider2'; */
 
 function App() {
@@ -34,7 +35,7 @@ const handleScroll = () => {
       <Cover />
       <About lang={lang}/>
       <Slider />
-      <Info lang={lang}/>
+      <SideBar lang={lang}/>
       <Footer lang={lang}/>
     </div>
   );

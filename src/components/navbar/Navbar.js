@@ -17,13 +17,16 @@ const Navbar = (props) => {
                     <Link className="navbar-logo" onClick={toBot}>Contact</Link>
                 </div>
                 <div className="lang-container">
+                    
+                    
                 
-                    <button onClick={props.changeLang} className={props.lang === "en" ? "en-clicked" : "en"}>
-                        <span className="flag-icon flag-icon-us"></span>
-                    </button>
-                    <button onClick={props.changeLang}  className={props.lang === "es" ? "es-clicked" : "esp"}>
-                        <span className="flag-icon flag-icon-es"></span>
-                    </button>
+                        <button onClick={props.changeLang} className={props.lang === "en" ? "en-clicked" : "en"}>
+                            <span className="flag-icon flag-icon-us"></span>
+                        </button>
+                        <button onClick={props.changeLang}  className={props.lang === "es" ? "es-clicked" : "es"}>
+                            <span className="flag-icon flag-icon-es"></span>
+                        </button>
+                    
                 </div>
             </nav>
         )}

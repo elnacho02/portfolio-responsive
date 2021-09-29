@@ -65,7 +65,7 @@
     border-bottom: 4px solid transparent;
 }
 .linkedin:hover, .whatsapp:hover, .instagram:hover, .email:hover{
-    border-color: white;
+    border-color: rgb(255, 255, 255);
     transition: all 0.3s ease-out;
 }
 
