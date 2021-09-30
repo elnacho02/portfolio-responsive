@@ -19,7 +19,7 @@ const Footer = (props) => {
                         <input className="text-input" placeholder=" Name" type="text" id="name" autoComplete="off"/>
                         <input className="text-input" placeholder=" Email" type="email" id="email" autoComplete="off"/>
                         <textarea className="inputMess" placeholder=" Message"></textarea>
-                        <input className="inputBot" type="button" name="send" value="SEND"/>
+                        <button className="inputBot" type="submit">SEND</button>
                     </form>
                 </div>
                 
@@ -50,18 +50,25 @@ const Footer = (props) => {
         return (
             <footer className="footer" id="contact">
                 <div className="footer-info">
+                <div>
                     <h1>Ignacio Aranda</h1>
                     <div className="country">
                         <p>Tucumán, Argentina</p>
                     
                         <i class="fas fa-globe-americas globo"></i>
                     </div>
-                    
-                    
                 </div>
-                <div className="footer-contact">
-                    <h3>Contáctenme</h3>
-                    <p>y pongámonos a trabajar</p>
+                 <div className="contactContainer">
+                    <h5>CONTACTO</h5>
+                    <form>
+                        <input className="text-input" placeholder=" Nombre" type="text" id="name" autoComplete="off"/>
+                        <input className="text-input" placeholder=" Email" type="email" id="email" autoComplete="off"/>
+                        <textarea className="inputMess" placeholder=" Mensaje"></textarea>
+                        <button className="inputBot" type="submit">ENVIAR</button>
+                    </form>
+                </div>
+                    
+                    
                 </div>
                 <div className="footer-sns">
                     <div className="design-by">
