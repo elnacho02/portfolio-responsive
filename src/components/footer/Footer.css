@@ -36,7 +36,7 @@ input, textarea{
     background-color: black;
     border: none;
     border: 1px solid white;
-    height: 30px;
+    height: 45px;
 }
 textarea{border-radius: 0;}
 .contactContainer>form>button{
@@ -129,7 +129,7 @@ textarea{border-radius: 0;}
         
     }
     .contactContainer{
-        width: 90%;
+        width: 100%;
         padding: 17% 0 0 0;
         margin: 0
 
@@ -146,4 +146,10 @@ textarea{border-radius: 0;}
         justify-content: center;
    }
    
+}
+
+@media screen and (max-height: 500px){
+    .sns-links{
+        display: none;
+    }
 }

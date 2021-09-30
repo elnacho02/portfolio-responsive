@@ -25,7 +25,7 @@ const Footer = (props) => {
    
     if(props.lang === "en"){ 
     return (
-        <footer className="footer" id="contact">
+        <footer className="footer" >
             <div className="footer-info">
                 <div>
                     <h1>Ignacio Aranda</h1>
@@ -37,7 +37,7 @@ const Footer = (props) => {
                 </div>
                  <div className="contactContainer">
                     <h5>CONTACT</h5>
-                    <form onSubmit={sendEmail}>
+                    <form onSubmit={sendEmail} id="contact">
                         <input className="text-input" placeholder=" Name" type="text" name="name" />
                         <input className="text-input" placeholder=" Email" type="email" name="mail" />
                         <textarea className="inputMess" placeholder=" Message" name="message" id="message"></textarea>
