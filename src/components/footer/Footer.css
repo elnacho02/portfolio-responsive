@@ -116,18 +116,7 @@ textarea{border-radius: 0;}
         flex-direction: column;
     }
     
-    .footer-contact{
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        flex-direction: column;
-        font-size: 16px;
-        padding: 100px 0 0 0;
-        text-align: center;
-        position: absolute;
-        bottom: 100px;
-        
-    }
+   
     .contactContainer{
         width: 100%;
         padding: 17% 0 0 0;
@@ -148,8 +137,3 @@ textarea{border-radius: 0;}
    
 }
 
-@media screen and (max-height: 500px){
-    .sns-links{
-        display: none;
-    }
-}
