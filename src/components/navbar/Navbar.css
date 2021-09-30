@@ -72,5 +72,6 @@
     }
     .linksNavbar{
         margin-left: 0px;
+        gap: 15px;
     }
 }

@@ -1,7 +1,29 @@
 import React from 'react';
 import "./Footer.css";
+import emailjs from 'emailjs-com';
+import Swal from 'sweetalert2'
 const Footer = (props) => {
-   if(props.lang === "en"){ 
+   
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_6fosh4l', 'template_5cmsf4e', e.target, 'user_2fMVd00rgXqn0qOePndGa')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+          e.target.reset()
+          Swal.fire({
+            icon: 'success',
+            title: 'I will contact you as soon as possible!',
+            showConfirmButton: false,
+            timer: 3200
+          })
+      };
+   
+   
+    if(props.lang === "en"){ 
     return (
         <footer className="footer" id="contact">
             <div className="footer-info">
@@ -15,10 +37,10 @@ const Footer = (props) => {
                 </div>
                  <div className="contactContainer">
                     <h5>CONTACT</h5>
-                    <form>
-                        <input className="text-input" placeholder=" Name" type="text" id="name" autoComplete="off"/>
-                        <input className="text-input" placeholder=" Email" type="email" id="email" autoComplete="off"/>
-                        <textarea className="inputMess" placeholder=" Message"></textarea>
+                    <form onSubmit={sendEmail}>
+                        <input className="text-input" placeholder=" Name" type="text" name="name" />
+                        <input className="text-input" placeholder=" Email" type="email" name="mail" />
+                        <textarea className="inputMess" placeholder=" Message" name="message" id="message"></textarea>
                         <button className="inputBot" type="submit">SEND</button>
                     </form>
                 </div>
@@ -60,10 +82,10 @@ const Footer = (props) => {
                 </div>
                  <div className="contactContainer">
                     <h5>CONTACTO</h5>
-                    <form>
-                        <input className="text-input" placeholder=" Nombre" type="text" id="name" autoComplete="off"/>
-                        <input className="text-input" placeholder=" Email" type="email" id="email" autoComplete="off"/>
-                        <textarea className="inputMess" placeholder=" Mensaje"></textarea>
+                    <form onSubmit={sendEmail}>
+                        <input className="text-input" placeholder=" Nombre" type="text" name="name" autoComplete="off"/>
+                        <input className="text-input" placeholder=" Email" type="email" name="email" autoComplete="off"/>
+                        <textarea className="inputMess" placeholder=" Mensaje" name="message"></textarea>
                         <button className="inputBot" type="submit">ENVIAR</button>
                     </form>
                 </div>

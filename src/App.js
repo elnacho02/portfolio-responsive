@@ -32,7 +32,7 @@ const handleScroll = () => {
   return (
     <div className="App">
       <Navbar isScrolling={scrollHeight} lang={lang} changeLang={changeLang}/> 
-      <Cover />
+      <Cover lang={lang}/>
       <About lang={lang}/>
       <Slider />
       <SideBar lang={lang}/>
