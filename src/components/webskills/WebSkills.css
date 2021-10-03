@@ -1,0 +1,31 @@
+.skillsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.progrLeng{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.js, .html5, .css3, .react, .wordpress{
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.jsSelected, .html5Selected, .css3Selected, .reactSelected, .wordpressSelected{
+    font-size: 35px;
+    transform: scale(1.2);
+    padding-bottom: 4px;
+    border-bottom: 2px solid rgb(8, 137, 141); 
+}
+
+.fa-star{
+    font-size: 20px;
+    margin-bottom: 10px;
+}

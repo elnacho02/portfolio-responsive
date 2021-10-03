@@ -1,20 +1,18 @@
 import React from 'react'
 import "./SideBar.css";
 import { useState } from 'react';
+import WebSkills from '../webskills/WebSkills';
+
 const Info = ({lang}) => {
     var [selected, setSelected]=useState("skills")
     const seleccionar= (x)=>{
         setSelected(x)
     }
-    const seleccionarIcon=(x)=>{
-        setSkillSelected(x)
-    }
-
-    var [skillSelected, setSkillSelected] = useState("jsStars")
+    var [skillsSelected, setSkillSelected] = useState("front")
     
     if(lang==="es"){
     return (
-            <div className="sidebarContainer" >
+            <div className="sidebarContainer" id="skills">
                 <div className="sideMenuContainer">
                         <span onClick={()=>seleccionar("skills")}  className={selected==="skills"? "skills" : "sectionSpan"}>HABILIDADES</span>
                         <span onClick={()=>seleccionar("education")} className={selected==="education"? "educacion" : "sectionSpan"}>EDUCACIÓN</span>
@@ -32,63 +30,21 @@ const Info = ({lang}) => {
                             <p className="educationP">Full Stack web developer bootcamp. Terminado en 12/2021. </p>
                         </div>}
                         {selected==="skills" && 
-                        <div>
-                            
-                            <p className="mystackP">
-                             Usando <strong>Javascript</strong>, <strong>HTML</strong>, <strong>CSS</strong> librerias/frameworks como<strong>React/React-Redux</strong>  en front-end. <strong>MySql</strong>, <strong>MongoDB</strong> y <strong>NodeJs</strong>.
-                            </p>
-                            <br />
-                            <div class="skillsContainer">
-                                
-                                <div className="progrLeng">
-                                <i  onClick={()=>seleccionarIcon("jsStars")} class={skillSelected==="jsStars" ? "fab fa-js jsSelected" : "fab fa-js js" } ></i>
-                                <i  onClick={()=>seleccionarIcon("htmlStars")} class={skillSelected==="htmlStars" ? "fab fa-html5 html5Selected" : "fab fa-html5 html5" } ></i>
-                                <i  onClick={()=>seleccionarIcon("cssStars")} class={skillSelected==="cssStars" ? "fab fa-css3 css3Selected" : "fab fa-css3 css3" } ></i>
-                                <i  onClick={()=>seleccionarIcon("reactStars")} class={skillSelected==="reactStars" ? "fab fa-react reactSelected" : "fab fa-react react" } ></i>
-                                <i  onClick={()=>seleccionarIcon("wordpressStars")} class={skillSelected==="wordpressStars" ? "fab fa-wordpress wordpressSelected" : "fab fa-wordpress wordpress" } ></i>
-
-                                </div>
-                                {skillSelected==="jsStars" &&
-                                <div >
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="far fa-star "></i>
-                                        <i class="far fa-star"></i>
-                                </div>}
-                                {skillSelected==="htmlStars" &&
-                                <div >
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="far fa-star"></i>
-                                </div>}
-                                {skillSelected==="cssStars" &&
-                                <div >
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="far fa-star "></i>
-                                        <i class="far fa-star"></i>
-                                </div>}
-                                {skillSelected==="reactStars" &&
-                                <div >
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="far fa-star"></i>
-                                </div>}
-                                {skillSelected==="wordpressStars" &&
-                                <div >
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="far fa-star"></i>
-                                </div>}
+                        <div> 
+                             <div className="botonesContainer">
+                                 <div className={skillsSelected==="front" ? "frontSelected":"front"}>
+                                    <h4>FRONT</h4>
+                                 </div>
+                                 <div className={skillsSelected==="back" ? "backSelected":"back"}>
+                                    <h4>BACK</h4>
+                                 </div>
+                                 <div className={skillsSelected==="other" ? "otherSelected":"other"}>
+                                    <h4>OTHERS</h4>
+                                 </div>
                              </div>
+                             <br />
+                             {skillsSelected==="front" && <WebSkills />}
+                             <br />
                             <strong>Idiomas</strong>
                             <hr />
                             <div className="idiomasLevel">
@@ -109,7 +65,7 @@ const Info = ({lang}) => {
         )}
         else{
             return (
-                <div className="sidebarContainer" >
+                <div className="sidebarContainer" id="skills" >
                     <div className="sideMenuContainer">
                             <span onClick={()=>seleccionar("skills")}  className={selected==="skills"? "skills" : "sectionSpan"}>SKILLS</span>
                             <span onClick={()=>seleccionar("education")} className={selected==="education"? "educacion" : "sectionSpan"}>EDUCATION</span>
@@ -128,62 +84,8 @@ const Info = ({lang}) => {
                             </div>}
                             {selected==="skills" && 
                             <div>
-                                
-                                <p className="mystackP">
-                                 Using <strong>Javascript</strong>, <strong>HTML</strong>, <strong>CSS</strong> libraries/frameworks like <strong>React/React-Redux</strong>  in front-end. <strong>MySql</strong>, <strong>MongoDB</strong> and <strong>NodeJs</strong>.
-                                </p>
+                               
                                 <br />
-                                <div class="skillsContainer">
-                                    
-                                    <div className="progrLeng">
-                                    <i  onClick={()=>seleccionarIcon("jsStars")} class={skillSelected==="jsStars" ? "fab fa-js jsSelected" : "fab fa-js js" } ></i>
-                                    <i  onClick={()=>seleccionarIcon("htmlStars")} class={skillSelected==="htmlStars" ? "fab fa-html5 html5Selected" : "fab fa-html5 html5" } ></i>
-                                    <i  onClick={()=>seleccionarIcon("cssStars")} class={skillSelected==="cssStars" ? "fab fa-css3 css3Selected" : "fab fa-css3 css3" } ></i>
-                                    <i  onClick={()=>seleccionarIcon("reactStars")} class={skillSelected==="reactStars" ? "fab fa-react reactSelected" : "fab fa-react react" } ></i>
-                                    <i  onClick={()=>seleccionarIcon("wordpressStars")} class={skillSelected==="wordpressStars" ? "fab fa-wordpress wordpressSelected" : "fab fa-wordpress wordpress" } ></i>
-    
-                                    </div>
-                                    {skillSelected==="jsStars" &&
-                                    <div >
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star "></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="far fa-star "></i>
-                                            <i class="far fa-star"></i>
-                                    </div>}
-                                    {skillSelected==="htmlStars" &&
-                                    <div >
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star "></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star "></i>
-                                            <i class="far fa-star"></i>
-                                    </div>}
-                                    {skillSelected==="cssStars" &&
-                                    <div >
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star "></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="far fa-star "></i>
-                                            <i class="far fa-star"></i>
-                                    </div>}
-                                    {skillSelected==="reactStars" &&
-                                    <div >
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star "></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star "></i>
-                                            <i class="far fa-star"></i>
-                                    </div>}
-                                    {skillSelected==="wordpressStars" &&
-                                    <div >
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star "></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star "></i>
-                                            <i class="far fa-star"></i>
-                                    </div>}
-                                 </div>
                                 <strong>Lenguages</strong>
                                 <hr />
                                 <div className="idiomasLevel">
