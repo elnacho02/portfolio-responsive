@@ -45,7 +45,7 @@
     padding: 15px;
     background: radial-gradient(rgb(9, 66, 88), rgb(8, 137, 141)) ; ;
     transition: all 0.3s ease-out;
-    border-radius: 5px;
+    
     transform: scale(1.08);
     
 }
@@ -73,6 +73,7 @@
     display: flex;
     flex-direction: row;
     width: 100%;
+    margin-left: 4px;
     margin-top: -20px;
     
     
@@ -83,7 +84,7 @@
     width: 33%;  
     padding: 10px 0 10px 0;
     background-color: rgb(253, 253, 253);
-    border: 1px solid grey;
+    border: 1px solid rgb(9, 66, 88);
     border-top-color: transparent;
 }
 .back{
@@ -92,10 +93,10 @@
 }
 .frontSelected, .backSelected, .otherSelected{
     text-align: center;
-    cursor: pointer;
     width: 33%;  
     padding: 10px 0 10px 0;
-    background-color: grey;
+    background: linear-gradient(white,rgb(117, 117, 117));
+    transition: all 0.3s ease-out;
 }
 
 
@@ -153,7 +154,9 @@
         display: flex;
         flex-direction: row;
     }
-    
+    .botonesContainer{
+        margin-left: 1px;
+    }
     
 
 }

@@ -32,13 +32,13 @@ const Info = ({lang}) => {
                         {selected==="skills" && 
                         <div> 
                              <div className="botonesContainer">
-                                 <div className={skillsSelected==="front" ? "frontSelected":"front"}>
+                                 <div className={skillsSelected==="front" ? "frontSelected":"front"} onClick={()=>setSkillSelected("front")}>
                                     <h4>FRONT</h4>
                                  </div>
-                                 <div className={skillsSelected==="back" ? "backSelected":"back"}>
+                                 <div className={skillsSelected==="back" ? "backSelected":"back"} onClick={()=>setSkillSelected("back")}>
                                     <h4>BACK</h4>
                                  </div>
-                                 <div className={skillsSelected==="other" ? "otherSelected":"other"}>
+                                 <div className={skillsSelected==="other" ? "otherSelected":"other"} onClick={()=>setSkillSelected("other")}>
                                     <h4>OTHERS</h4>
                                  </div>
                              </div>
@@ -84,7 +84,19 @@ const Info = ({lang}) => {
                             </div>}
                             {selected==="skills" && 
                             <div>
-                               
+                               <div className="botonesContainer">
+                                 <div className={skillsSelected==="front" ? "frontSelected":"front"} onClick={()=>setSkillSelected("front")}>
+                                    <h4>FRONT</h4>
+                                 </div>
+                                 <div className={skillsSelected==="back" ? "backSelected":"back"} onClick={()=>setSkillSelected("back")}>
+                                    <h4>BACK</h4>
+                                 </div>
+                                 <div className={skillsSelected==="other" ? "otherSelected":"other"} onClick={()=>setSkillSelected("other")}>
+                                    <h4>OTHERS</h4>
+                                 </div>
+                             </div>
+                             <br />
+                             {skillsSelected==="front" && <WebSkills />}
                                 <br />
                                 <strong>Lenguages</strong>
                                 <hr />
