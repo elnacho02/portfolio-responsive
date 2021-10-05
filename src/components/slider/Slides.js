@@ -14,9 +14,10 @@ const slidesInfo = [
         href:"https://sleepy-poitras-8a039c.netlify.app/"
     },
     {
-        src:"https://cdn.pixabay.com/photo/2015/02/05/08/06/macbook-624707_960_720.jpg",
-        alt:"Project 3",
-        desc: "Project 3"
+        src:"https://i.ibb.co/HFxQK6J/Screenshot-1.jpg",
+        alt:"Crypto App",
+        desc: "Crypto App",
+        href: "https://615c89f921e6501888cfdb6e--xenodochial-easley-6580f7.netlify.app/"
     },
     {
         src:"https://cdn.pixabay.com/photo/2015/02/05/08/06/macbook-624707_960_720.jpg",
