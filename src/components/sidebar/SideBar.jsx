@@ -2,6 +2,7 @@ import React from 'react'
 import "./SideBar.css";
 import { useState } from 'react';
 import WebSkills from '../webskills/WebSkills';
+import BackSkills from "../backSkills/BackSkills"
 
 const Info = ({lang}) => {
     var [selected, setSelected]=useState("skills")
@@ -44,6 +45,7 @@ const Info = ({lang}) => {
                              </div>
                              <br />
                              {skillsSelected==="front" && <WebSkills />}
+                             {skillsSelected==="back" && <BackSkills />}
                              <br />
                             <strong>Idiomas</strong>
                             <hr />
@@ -97,6 +99,7 @@ const Info = ({lang}) => {
                              </div>
                              <br />
                              {skillsSelected==="front" && <WebSkills />}
+                             {skillsSelected==="back" && <BackSkills />}
                                 <br />
                                 <strong>Lenguages</strong>
                                 <hr />
