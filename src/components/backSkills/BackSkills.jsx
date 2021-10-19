@@ -1,6 +1,9 @@
 import React from 'react'
+import {ReactComponent as PostgresLogo} from '../../media/postgresql.svg';
+import {ReactComponent as MongoLogo} from '../../media/mongodb.svg';
 
 import "../webskills/WebSkills.css"
+
 
 
 function BackSkills() {
@@ -15,24 +18,22 @@ function BackSkills() {
                     <div className="progrLeng">
                     
                     <i onClick={()=>seleccionarIcon("nodeStars")} className={skillSelected==="nodeStars" ? "fab fa-node-js nodeSelected" : "fab fa-node-js node" } ></i>
-                    <i onClick={()=>seleccionarIcon("nodejsStars")} className={skillSelected==="nodejsStars" ? "fi fi-nodejs nodejsSelected" : "fi fi-nodejs nodejs" }><span className='spanSkill'>Express</span></i>
-                    <i onClick={()=>seleccionarIcon("mysqlStars")} className={skillSelected==="mysqlStars" ? "fi fi-mysql mysqlSelected" : "fi fi-mysql mysql" }></i>
-                    <i onClick={()=>seleccionarIcon("mongodbStars")} className={skillSelected==="mongodbStars" ? "fi fi-mongodb mongodbSelected" : "fi fi-mongodb mongodb" }></i>
-                   
+                    <MongoLogo onClick={()=>seleccionarIcon("mongodbStars")} className={skillSelected==="mongodbStars" ? "mongodbSelected" : "mongodb" }/>
+                    <PostgresLogo onClick={()=>seleccionarIcon("postgresqlStars")} className={skillSelected==="postgresqlStars" ? "postgresqlSelected" : "postgresql" }/>
                     </div>
                         {skillSelected==="nodeStars" &&
                         <div >
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star "></i>
-                            <i class="far fa-star"></i>
+                            <i class="fas fa-star"></i>
                             <i class="far fa-star "></i>
                             <i class="far fa-star"></i>
                         </div>}
-                        {skillSelected==="mysqlStars" &&
+                        {skillSelected==="postgresqlStars" &&
                         <div >
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star "></i>
-                            <i class="far fa-star"></i>
+                            <i class="fas fa-star"></i>
                             <i class="far fa-star "></i>
                             <i class="far fa-star"></i>
                         </div>}
@@ -43,18 +44,7 @@ function BackSkills() {
                             <i class="far fa-star"></i>
                             <i class="far fa-star "></i>
                             <i class="far fa-star"></i>
-                        </div>}
-                        {skillSelected==="nodejsStars" &&
-                        <div >
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star "></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star "></i>
-                            <i class="far fa-star"></i>
-                        </div>}
-                        
-                        
-                                
+                        </div>}                                           
                     </div>
     )
 }
