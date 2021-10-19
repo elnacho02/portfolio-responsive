@@ -15,7 +15,7 @@ function WebSkills() {
                     <i  onClick={()=>seleccionarIcon("reduxStars")} class={skillSelected==="reduxStars" ? "fi fi-redux reduxSelected" : "fi fi-redux redux" }></i>
                     <i  onClick={()=>seleccionarIcon("cssStars")} class={skillSelected==="cssStars" ? "fab fa-css3 css3Selected" : "fab fa-css3 css3" } ></i>
                     
-                    <i  onClick={()=>seleccionarIcon("reactNativeStars")} class={skillSelected==="reactNativeStars" ? "fab fa-react reactNativeSelected" : "fab fa-react reactNative" } ><span className='spanSkill'>Native</span></i>
+                    {/* <i  onClick={()=>seleccionarIcon("reactNativeStars")} class={skillSelected==="reactNativeStars" ? "fab fa-react reactNativeSelected" : "fab fa-react reactNative" } ><span className='spanSkill'>Native</span></i> */}
                     
                     
                         </div>
@@ -51,14 +51,14 @@ function WebSkills() {
                                         <i class="far fa-star "></i>
                                         <i class="far fa-star"></i>
                                 </div>}
-                                {skillSelected==="reactNativeStars" &&
+                                {/* skillSelected==="reactNativeStars" &&
                                 <div >
                                         <i class="fas fa-star"></i>
                                         <i class="far fa-star "></i>
                                         <i class="far fa-star"></i>
                                         <i class="far fa-star "></i>
                                         <i class="far fa-star"></i>
-                                </div>}
+                                </div> */}
                                 
                              </div>
     )
