@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio-responsive/static/css/main.a60092c5.chunk.css",
+    "main.css": "/portfolio-responsive/static/css/main.63b25c82.chunk.css",
     "main.js": "/portfolio-responsive/static/js/main.058bfd07.chunk.js",
     "main.js.map": "/portfolio-responsive/static/js/main.058bfd07.chunk.js.map",
     "runtime-main.js": "/portfolio-responsive/static/js/runtime-main.3556482a.js",
@@ -10,7 +10,7 @@
     "static/js/2.976598eb.chunk.js.map": "/portfolio-responsive/static/js/2.976598eb.chunk.js.map",
     "index.html": "/portfolio-responsive/index.html",
     "static/css/2.dab86632.chunk.css.map": "/portfolio-responsive/static/css/2.dab86632.chunk.css.map",
-    "static/css/main.a60092c5.chunk.css.map": "/portfolio-responsive/static/css/main.a60092c5.chunk.css.map",
+    "static/css/main.63b25c82.chunk.css.map": "/portfolio-responsive/static/css/main.63b25c82.chunk.css.map",
     "static/js/2.976598eb.chunk.js.LICENSE.txt": "/portfolio-responsive/static/js/2.976598eb.chunk.js.LICENSE.txt",
     "static/media/coverVideo.061a5b8c.mp4": "/portfolio-responsive/static/media/coverVideo.061a5b8c.mp4",
     "static/media/mongodb.d930c2c4.svg": "/portfolio-responsive/static/media/mongodb.d930c2c4.svg",
@@ -20,7 +20,7 @@
     "static/js/runtime-main.3556482a.js",
     "static/css/2.dab86632.chunk.css",
     "static/js/2.976598eb.chunk.js",
-    "static/css/main.a60092c5.chunk.css",
+    "static/css/main.63b25c82.chunk.css",
     "static/js/main.058bfd07.chunk.js"
   ]
 }
