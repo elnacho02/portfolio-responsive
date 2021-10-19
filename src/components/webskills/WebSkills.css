@@ -16,20 +16,20 @@
 }
 
 .js,  .css3, .react, .wordpress, .node, .redux,.mongodb, .nodejs, .postgresql, .reactNative {
-    font-size: 40px;
+    font-size: 39px;
     cursor: pointer; 
-    width: 40px;
+    width: 39px;
 }
 
 .jsSelected,  .css3Selected, .reactSelected, .wordpressSelected, .postgresqlSelected, .mongodbSelected, .reactNativeSelected{
-    font-size: 40px;
-    width: 40px;
+    font-size: 39px;
+    width: 39px;
     transform: scale(1.2);
     padding-bottom: 2px;
     border-bottom: 2px solid rgb(8, 137, 141); 
 }
 .nodeSelected,.reduxSelected,.nodejsSelected{
-    font-size: 37px;
+    font-size: 35px;
     transform: scale(1.1);
     padding-bottom: 5px;
     border-bottom: 2px solid rgb(8, 137, 141); 
