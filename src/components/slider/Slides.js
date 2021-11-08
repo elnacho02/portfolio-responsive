@@ -1,7 +1,14 @@
 import React from "react";
 import "./Slider.css";
 const slidesInfo = [
-   {
+    {
+        src:"https://i.ibb.co/YDmThBR/Screenshot-1.jpg",
+        alt:"Pokemon PI",
+        desc: "Pokemon",
+        href:"https://www.linkedin.com/feed/update/urn:li:activity:6862074412095672320/"
+    },
+
+    {
         src:"https://i.ibb.co/Wp65SvV/Screenshot-1.jpg",
         alt:"Weather App",
         desc: "Weather App",
@@ -13,17 +20,12 @@ const slidesInfo = [
         desc: "Movies App",
         href:"https://sleepy-poitras-8a039c.netlify.app/"
     },
-    {
+    /* {
         src:"https://i.ibb.co/HFxQK6J/Screenshot-1.jpg",
         alt:"Crypto App",
         desc: "Crypto App",
         href: "https://615c89f921e6501888cfdb6e--xenodochial-easley-6580f7.netlify.app/"
-    },
-    {
-        src:"https://cdn.pixabay.com/photo/2015/02/05/08/06/macbook-624707_960_720.jpg",
-        alt:"Project 4",
-        desc: "Project 4"
-    }
+    } */
 ]
 
 const slides = slidesInfo.map(slide=>(

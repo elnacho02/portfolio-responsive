@@ -15,13 +15,13 @@
     
 }
 
-.js,  .css3, .react, .wordpress, .node, .redux,.mongodb, .nodejs, .postgresql, .reactNative {
+.js,  .css3, .react, .wordpress, .node, .redux,.mongodb, .nodejs, .postgresql, .express {
     font-size: 39px;
     cursor: pointer; 
     width: 39px;
 }
 
-.jsSelected,  .css3Selected, .reactSelected, .wordpressSelected, .postgresqlSelected, .mongodbSelected, .reactNativeSelected{
+.jsSelected,  .css3Selected, .reactSelected, .wordpressSelected, .postgresqlSelected, .mongodbSelected, .expressSelected{
     font-size: 39px;
     width: 39px;
     transform: scale(1.2);

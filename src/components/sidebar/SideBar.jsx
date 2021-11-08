@@ -3,6 +3,7 @@ import "./SideBar.css";
 import { useState } from 'react';
 import WebSkills from '../webskills/WebSkills';
 import BackSkills from "../backSkills/BackSkills"
+import OtherSkills from "../OtherSkills/OtherSkills"
 
 const Info = ({lang}) => {
     var [selected, setSelected]=useState("skills")
@@ -25,7 +26,7 @@ const Info = ({lang}) => {
                             <hr />
                             <br />
                             <strong>Universidad Siglo 21</strong>
-                            <p className="educationP"> Estudiante de segundo año en la carrera de Informatica. 2020/presente</p>
+                            <p className="educationP"> Estudiante de segundo año en la carrera de Ingenieria en Software. 2020/presente</p>
                             <br />
                             <strong>Henry Bootcamp</strong>
                             <p className="educationP">Full Stack web developer bootcamp. Terminado en 12/2021. </p>
@@ -46,6 +47,7 @@ const Info = ({lang}) => {
                              <br />
                              {skillsSelected==="front" && <WebSkills />}
                              {skillsSelected==="back" && <BackSkills />}
+                             {skillsSelected==="other" && <OtherSkills />}
                              <br />
                             <strong>Idiomas</strong>
                             <hr />
@@ -79,7 +81,7 @@ const Info = ({lang}) => {
                                 <hr />
                                 <br />
                                 <strong>Universidad Siglo 21</strong>
-                                <p className="educationP"> Student in second year of Informatic´s carreer. 2020/present</p>
+                                <p className="educationP"> Student in second year of Software Engineering carreer. 2020/present</p>
                                 <br />
                                 <strong>Henry Bootcamp</strong>
                                 <p className="educationP">Full Stack web developer bootcamp. Finished in 12/2021. </p>
