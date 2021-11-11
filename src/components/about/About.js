@@ -8,7 +8,7 @@ function About(props) {
                 <div className="about-desc" >
                     <h3 >Hi, I am Ignacio!</h3>
                     <p>Im a 19yo Web Developer from Argentina<span className="flag-icon flag-icon-ar">
-                    </span> <br/> Also, im a second year student of Software Engineering carreer at Siglo 21 college. I started my programming carreer at Henry´s Bootcamp, there i acquired skills to be a Full Stack Web Developer.</p> 
+                    </span> <br/> Also, im a second year student of Software Engineering carreer at Siglo 21 University. I started my programming carreer at Henry´s Bootcamp, there i acquired skills to be a Full Stack Web Developer.</p> 
                     
             </div>
             <div className="about-img">
