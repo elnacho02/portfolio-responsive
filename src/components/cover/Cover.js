@@ -6,15 +6,15 @@ const Cover = ({lang}) => {
     return (
         <div className="cover-container">
             <video className="video" src={coverVideo} autoPlay loop muted/>
-            <h1>Ignacio Aranda</h1>
-            <p>Web Developer</p>
+            <h1 >ignacio aranda</h1>
+            <p title='Web Developer'>Web Developer</p>
         </div>
     )}else{
         return (
             <div className="cover-container">
                 <video className="video" src={coverVideo} autoPlay loop muted/>
-                <h1>Ignacio Aranda</h1>
-                <p>Desarrollador Web</p>
+                <h1>ignacio aranda</h1>
+                <p title='Desarrollador Web'>Desarrollador Web</p>
             </div>
         )
     }

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 .navbar{
     display: flex;
     flex-direction: row;
@@ -11,11 +12,13 @@
     font-size: 20px;
     z-index: 1;
     gap: 20px;
+    font-family: 'Nunito';
 }
 .linksNavbar{
     display: flex;
     gap: 20px;
     margin-left: 20px;
+    
 }
 .scrolling {
     background-color: black;

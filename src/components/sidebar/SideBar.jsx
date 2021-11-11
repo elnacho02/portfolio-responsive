@@ -102,6 +102,7 @@ const Info = ({lang}) => {
                              <br />
                              {skillsSelected==="front" && <WebSkills />}
                              {skillsSelected==="back" && <BackSkills />}
+                             {skillsSelected==="other" && <OtherSkills />}
                                 <br />
                                 <strong>Lenguages</strong>
                                 <hr />
