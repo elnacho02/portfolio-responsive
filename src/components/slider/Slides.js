@@ -1,11 +1,18 @@
 import React from "react";
 import "./Slider.css";
 const slidesInfo = [
+    
     {
         src:"https://i.ibb.co/YDmThBR/Screenshot-1.jpg",
         alt:"Pokemon PI",
         desc: "Pokemon",
         href:"https://www.linkedin.com/feed/update/urn:li:activity:6862074412095672320/"
+    },
+    {
+        src:"https://i.ibb.co/MpH5jQ4/Screenshot-1.jpg",
+        alt:"Trivia Game",
+        desc: "Trivia Game",
+        href:"https://amazing-hawking-c60b09.netlify.app/"
     },
 
     {
