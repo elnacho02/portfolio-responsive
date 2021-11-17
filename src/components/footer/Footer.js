@@ -52,7 +52,7 @@ const Footer = (props) => {
                     Created with ReactJs   
                 </div>
                 <div className="sns-links">
-                    <a href="https://www.linkedin.com/in/ignacio-aranda-977632225/" target="_blank" rel="noreferrer">
+                    <a href="www.linkedin.com/in/ignacio-aranda-webdeveloper" target="_blank" rel="noreferrer">
                         <i className="fab fa-linkedin linkedin"></i>
                     </a>
                     <a href="mailto:ignacioarcontact@gmail.com" target="_blank" rel="noreferrer">
@@ -97,7 +97,7 @@ const Footer = (props) => {
                         Creado con ReactJs   
                     </div>
                     <div className="sns-links">
-                        <a href="https://www.linkedin.com/in/ignacio-aranda-977632225/" target="_blank" rel="noreferrer">
+                        <a href="www.linkedin.com/in/ignacio-aranda-webdeveloper" target="_blank" rel="noreferrer">
                             <i className="fab fa-linkedin linkedin"></i>
                         </a>
                         <a href="mailto:ignacioarcontact@gmail.com" target="_blank" rel="noreferrer">
