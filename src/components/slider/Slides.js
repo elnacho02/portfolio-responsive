@@ -6,7 +6,7 @@ const slidesInfo = [
         src:"https://i.ibb.co/YDmThBR/Screenshot-1.jpg",
         alt:"Pokemon PI",
         desc: "Pokemon",
-        href:"https://www.linkedin.com/feed/update/urn:li:activity:6862074412095672320/"
+        href:"https://www.linkedin.com/feed/update/urn:li:activity:6862089295054942209/"
     },
     {
         src:"https://i.ibb.co/MpH5jQ4/Screenshot-1.jpg",
