@@ -12,8 +12,8 @@ const Navbar = (props) => {
             
             <nav className={`navbar ${props.isScrolling > 20 ? "scrolling" : null}`}>
                 <div className="linksNavbar">
-                    <Link className="navbar-logo" to="projects" smooth={true} duration={1000}>Projects</Link>
                     <Link className="navbar-logo" to="about" smooth={true} duration={1000} offset={-120}>About</Link>
+                    <Link className="navbar-logo" to="projects" smooth={true} duration={1000}>Projects</Link>
                     <Link className="navbar-logo" to="skills" smooth={true} duration={1000}offset={-120}>Skills</Link>
                     <Link className="navbar-logo" onClick={toBot}>Contact</Link>
                 </div>
@@ -36,8 +36,8 @@ const Navbar = (props) => {
                 <nav className={`navbar ${props.isScrolling > 20 ? "scrolling" : null}`}>
                     
                     <div className="linksNavbar">
-                        <Link className="navbar-logo" to="projects" smooth={true} duration={1000}>Proyectos</Link>
                         <Link className="navbar-logo" to="about" smooth={true} duration={1000}offset={-120}>About</Link>
+                        <Link className="navbar-logo" to="projects" smooth={true} duration={1000}>Proyectos</Link>
                         <Link className="navbar-logo" to="skills" smooth={true} duration={1000}offset={-120}>Skills</Link>
                         <Link className="navbar-logo" onClick={toBot}>Contacto</Link>
                     </div>

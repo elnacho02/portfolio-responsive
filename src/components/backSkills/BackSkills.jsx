@@ -23,40 +23,9 @@ function BackSkills() {
                     <ExpressLogo onClick={()=>seleccionarIcon("expressStars")} className={skillSelected==="expressStars" ? "expressSelected" : "express" }/>
                     <MongoLogo onClick={()=>seleccionarIcon("mongodbStars")} className={skillSelected==="mongodbStars" ? "mongodbSelected" : "mongodb" }/>
                     <PostgresLogo onClick={()=>seleccionarIcon("postgresqlStars")} className={skillSelected==="postgresqlStars" ? "postgresqlSelected" : "postgresql" }/>
+                                                               
                     </div>
-                        {skillSelected==="nodeStars" &&
-                        <div >
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star "></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star "></i>
-                            <i class="far fa-star"></i>
-                        </div>}
-                        {skillSelected==="postgresqlStars" &&
-                        <div >
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star "></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star "></i>
-                            <i class="far fa-star"></i>
-                        </div>}
-                        {skillSelected==="mongodbStars" &&
-                        <div >
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star "></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star "></i>
-                            <i class="far fa-star"></i>
-                        </div>} 
-                        {skillSelected==="expressStars" &&
-                        <div >
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star "></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star "></i>
-                            <i class="far fa-star"></i>
-                        </div>}                                             
-                    </div>
+                </div>
     )
 }
 
